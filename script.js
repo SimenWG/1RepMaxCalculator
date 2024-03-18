@@ -3,7 +3,7 @@ function calculate1RepMax() {
     var reps = parseFloat(document.getElementById('reps').value);
   
     if (isNaN(weight) || isNaN(reps)) {
-      document.getElementById('result').innerHTML = 'Please enter valid values for weight and reps.';
+      document.getElementById('result').innerHTML = 'Legg til et gyldig verdi for vekt og repetisjoner';
       return;
     }
   
@@ -13,6 +13,6 @@ function calculate1RepMax() {
   
     var oneRepMaxInKgs = oneRepMax / 2.20462;
   
-    document.getElementById('result').innerHTML = 'Your estimated 1 rep max is: ' + oneRepMaxInKgs.toFixed(2) + ' kg';
+    document.getElementById('result').innerHTML = 'Din Kalkulerte 1 Rep Max Er: ' + oneRepMaxInKgs.toFixed(2) + ' kg';
   }
   
